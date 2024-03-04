@@ -94,9 +94,6 @@ header {
 		right: 0%;
 }
 
-nav {
-	font-size: var(--fontSizeXLarge); 
-}
 
 .corner a {
 	display: flex;
@@ -106,15 +103,34 @@ nav {
 	height: 100%;
 }
 
-	.corner img {
-		width: 2em;
-		height: 2em;
-		object-fit: contain;
+@keyframes split {
+	  0% {
+	transform: translateY(50%);
+	opacity: 0;
+		width: 0%;
 	}
+	
+	100% {
+		opacity: 1;
+		transform: translateY(50%);
+		width: 25%;
+	}
+}
 
-	nav {
+.corner img {
+	width: 2em;
+	height: 2em;
+	object-fit: contain;
+}
+
+nav {
+		width: 25%; 
+	font-size: var(--fontSizeXLarge); 
+	animation: split;
+	animation-duration: 3s;
+	animation-timing-function: ease-in-out;;
 		color: var(--gray92);
-		
+		overflow: hidden;
 		backdrop-filter: blur(2px);
 		-webkit-backdrop-filter: blur(2px);
 		background-color: #e1e6eb2A;
@@ -130,7 +146,7 @@ nav {
 	ul {
 		display: flex;
 		justify-content: center;
-		gap: var(--spacingHalf)
+		gap: var(--spacing);
 	}
 	li {
 		display: flex;
