@@ -45,41 +45,69 @@
 <About/>
 <style>
 
+	
+	h1 {
+		position: relative;
+	}
+	span img {
+		width: 100%;
+		height: 100%;
+	}
+	img {
+		background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0,0,0,0.5));
+		
+		filter: brightness(75%);
+	}
+	.image-right {
+		position: absolute;
+		background-color: white;
+		width: 35rem;
+		height: 55rem;
+		right: 13%;
+		top: -60%;
+		animation: fadeIn;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;;
+}
 
-h1 {
-	position: relative;
+.first-name {
+	
+	animation: fadeIn;
+	animation-duration: 3s;
+	animation-timing-function: ease-in-out;;
 }
-span img {
-	width: 100%;
-	height: 100%;
-}
-img {
-	background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0,0,0,0.5));
-
-	filter: brightness(75%);
-}
-.image-right {
-	position: absolute;
-	background-color: white;
-	width: 35rem;
-    height: 55rem;
-    right: 13%;
-    top: -60%;
+.last-name {
+	
+	animation: fadeIn;
+	animation-duration: 4s;
+	animation-timing-function: ease-in-out;;
 }
 
 .image-left {
 	opacity: .75;
 	position: absolute;
 	width: 35rem;
-    top: 0%;
+	top: 0%;
 	background-color: green;
 	height: 55rem;
 	left: 15%;
-}
-
-section {
-	display: flex;
-	min-height: 100vh;
+	animation: fadeIn;
+	animation-duration: 6s;
+	animation-timing-function: ease-in-out;;
+	}
+	@keyframes fadeIn {
+	  0% {
+		opacity: 0;
+	}
+	
+	100% {
+		  opacity: 1;
+	}
+	}
+	
+	section {
+		display: flex;
+		min-height: 100vh;
 	width: 100%;
 	justify-content: center;
 	align-items: center;
