@@ -69,12 +69,13 @@ p {
     transform-style: preserve-3d;
     perspective: 500px;
     transform: rotateY(90deg);
+    opacity: 0;
 }
 
 
 .open {
     transform: rotateY(0deg);
-    
+    opacity: 1;
 }
 
 h2 {
