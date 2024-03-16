@@ -6,15 +6,16 @@
 
 <header>
 	<div class="left-corner">
-		<a class="name cinzel-main" href="#hero">
+		<a class="name cinzel-main" href="/#hero">
 			David Serrano
 		</a>
 	</div>
 
 	<nav class="cinzel-main">
 		<ul>
-			<li><a href="#about">About</a></li>
-			<li><a href="">Gallery</a></li>
+			<li><a href="/#about">About</a></li>
+			<li><a href="/#routine">Routine</a></li>
+			<li><a href="/#gallery">Gallery</a></li>
 		</ul>
 	</nav>
 
@@ -51,7 +52,28 @@ a:hover {
 a {
 	color: var(--gray80);
 	text-decoration: none;
+	position: relative;
+	transition: all .2s;
 }
+
+
+nav a::after {
+	content: "";
+	position: absolute;
+	height: 2px;
+	width: 100%;
+	background-color: var(--gray92);
+	bottom: 0%;
+	left: 0%;
+	transform: scaleX(0);
+	transition: all .2s ease-in-out;
+}
+
+nav a:hover::after {
+	
+	transform: scaleX(100%);
+}
+
 ul li {
 	cursor: pointer;
 }
@@ -113,7 +135,7 @@ header {
 	100% {
 		opacity: 1;
 		transform: translateY(50%);
-		width: 25%;
+		width: 35%;
 	}
 }
 
@@ -122,9 +144,12 @@ header {
 	height: 2em;
 	object-fit: contain;
 }
+* {
+	scroll-behavior: smooth;
 
+}
 nav {
-		width: 25%; 
+		width: 35%; 
 	font-size: var(--fontSizeXLarge); 
 	animation: split;
 	animation-duration: 3s;
@@ -146,11 +171,42 @@ nav {
 	ul {
 		display: flex;
 		justify-content: center;
-		gap: var(--spacing);
+		gap: calc(var(--spacing) * 2);
+	scroll-behavior: smooth;
+
 	}
 	li {
 		display: flex;
 		align-items: center;
 	}
 
+
+@media (max-width: 81em) {
+	nav {
+		width: 60%;
+	}
+
+@keyframes split {
+	  0% {
+		width: 0%;
+	}
+	
+	100% {
+		opacity: 1;
+		transform: translateY(50%);
+		width: 60%;
+	}
+}
+}
+
+
+@media (max-width: 81em) {
+	nav {
+		width: 80%;
+	}
+	
+	ul {
+		gap: var(--spacing);
+	}
+}
 </style>

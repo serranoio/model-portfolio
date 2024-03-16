@@ -55,3 +55,53 @@ export const buzzWordPages: BuzzWordPage[] = [
     }
 ]
 
+export enum PhotoshootTypes {
+    Opportunities = "opportunities"
+}
+
+export interface Photoshoot {
+    title: string,
+    photos: string[],
+    description: string,
+    url: string,
+    photographer: string
+}
+
+export const Photoshoots: Photoshoot[] = [
+{
+    title: "Problems Are Opportunities For Growth",
+    photos: ["sexy-pose.jpg", "me-rose.jpg", "sexy-pose.jpg", "me-rose.jpg"],
+    description: `
+    We need to accept that problems are a part of life, we need to accept that we will make mistakes, because it is what makes life so beautiful. 
+    From the day that you were born, you have been exploring this world, making mistakes and having problems. They are a part of life.
+    And when the light becomes dim and the times become obscure, don't ever forget that this darkness is what makes life so beautiful and the good times so sweet.
+    So treat the problems as opportunities for growth, mistakes as lessons to be learned from, because the pressure can transform you into a diamond.  You can channel the negative energy into raw, immense power for you to grow into who youre meant to be. 
+    You are the artist of your life who paints it to whatever you want and every stroke that you paint is intentful towards creating a beautiful, elegant, extraordinary life.
+    `,
+    url: PhotoshootTypes.Opportunities,
+    photographer: "https://www.simonayordanova.com/",
+},
+]
+
+
+
+
+export enum Row {
+    FiveAm = "5am",
+    Meditate = "meditate",
+    PlanDay = "plan-day",
+    CreativitySession = "creativity-session",
+    BrushTeethCommunte = "brush-teeth-communte",
+    Gym = "gym",
+    EatShower = "eat-shower",
+    FirstPomodoroSession = "first-pomodoro-session",
+    EatLunch = "eat-lunch",
+    Nap = "nap",
+    MiddayPomodoroSession = "midday-pomodoro-session",
+    Dinner = "dinner",
+    LastPomodoroSession = "last-pomodoro-session",
+    Recharge = "recharge",
+    CommuteToDance = "communte-to-dance",
+    Dance = "dance",
+    Sleep = "sleep",
+}

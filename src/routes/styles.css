@@ -169,3 +169,14 @@ html {
 body {
 	background-color: var(--black);
 }
+
+@media (max-width: 56em) {
+	html {
+		font-size: 50%;
+	}
+}
+@media (max-width: 38em) {
+	html {
+		font-size: 42.5%;
+	}
+}
