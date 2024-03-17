@@ -8,8 +8,14 @@
     "src": ".svelte-kit/generated/server/internal.js"
   },
   "Header.css": {
-    "file": "_app/immutable/assets/Header.bf158dae.css",
+    "file": "_app/immutable/assets/Header.cd3ad563.css",
     "src": "Header.css"
+  },
+  "_content.js": {
+    "file": "chunks/content.js"
+  },
+  "_index.js": {
+    "file": "chunks/index.js"
   },
   "_internal.js": {
     "file": "chunks/internal.js",
@@ -32,6 +38,7 @@
     "file": "index.js",
     "imports": [
       "_internal.js",
+      "_index.js",
       "_ssr.js"
     ],
     "isEntry": true,
@@ -62,7 +69,7 @@
     "src": "src/lib/images/svelte-welcome.webp"
   },
   "src/routes/+layout.css": {
-    "file": "_app/immutable/assets/_layout.335610bd.css",
+    "file": "_app/immutable/assets/_layout.26920a38.css",
     "src": "src/routes/+layout.css"
   },
   "src/routes/+layout.svelte": {
@@ -70,8 +77,8 @@
       "_app/immutable/assets/github.1ea8d62e.svg"
     ],
     "css": [
-      "_app/immutable/assets/_layout.335610bd.css",
-      "_app/immutable/assets/Header.bf158dae.css"
+      "_app/immutable/assets/_layout.26920a38.css",
+      "_app/immutable/assets/Header.cd3ad563.css"
     ],
     "file": "entries/pages/_layout.svelte.js",
     "imports": [
@@ -81,7 +88,7 @@
     "src": "src/routes/+layout.svelte"
   },
   "src/routes/+page.css": {
-    "file": "_app/immutable/assets/_page.2709e41d.css",
+    "file": "_app/immutable/assets/_page.5502786d.css",
     "src": "src/routes/+page.css"
   },
   "src/routes/+page.svelte": {
@@ -91,12 +98,13 @@
       "_app/immutable/assets/github.1ea8d62e.svg"
     ],
     "css": [
-      "_app/immutable/assets/_page.2709e41d.css",
-      "_app/immutable/assets/Header.bf158dae.css"
+      "_app/immutable/assets/_page.5502786d.css",
+      "_app/immutable/assets/Header.cd3ad563.css"
     ],
     "file": "entries/pages/_page.svelte.js",
     "imports": [
-      "_ssr.js"
+      "_ssr.js",
+      "_content.js"
     ],
     "isEntry": true,
     "src": "src/routes/+page.svelte"
@@ -105,5 +113,29 @@
     "file": "entries/pages/_page.ts.js",
     "isEntry": true,
     "src": "src/routes/+page.ts"
+  },
+  "src/routes/[photoshoot]/+page.css": {
+    "file": "_app/immutable/assets/_page.cd9f59af.css",
+    "src": "src/routes/[photoshoot]/+page.css"
+  },
+  "src/routes/[photoshoot]/+page.server.js": {
+    "file": "entries/pages/_photoshoot_/_page.server.js",
+    "imports": [
+      "_index.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/[photoshoot]/+page.server.js"
+  },
+  "src/routes/[photoshoot]/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.cd9f59af.css"
+    ],
+    "file": "entries/pages/_photoshoot_/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_content.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/[photoshoot]/+page.svelte"
   }
 }
