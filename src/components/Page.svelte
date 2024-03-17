@@ -82,4 +82,22 @@ h2 {
     color: var(--gray92);
 }
 
+@media (max-width: 56em) {
+    .page {
+        width: 100%;
+    }
+    
+    .regular {
+        top: 80%;
+        height: 60%;
+        overflow-y: scroll;
+    }
+
+    .reverse {
+        top: 0%;
+        height: 80%;
+        width: 100%;
+    }
+
+}
 </style>

@@ -11,7 +11,6 @@ const clickedTab = (e: any) => {
 
     
     selectedTab = e.target.innerText;
-    console.log(selectedTab)
 }
 </script>
 
@@ -19,20 +18,18 @@ const clickedTab = (e: any) => {
     <div class="title-box">
         <div class="buzz-words cinzel-main" on:click={clickedTab}>{#each buzzWordPages as buzzWord, index} 
             {@const bulletPoint =  index !== buzzWordPages.length-1 ? "•" : ""}
-            <button class={`cinzel-main ${selectedTab === buzzWord.buzzWord ? "selected" : ""}`}>{buzzWord.buzzWord}</button> {bulletPoint} 
+            <button class={`cinzel-main ${selectedTab === buzzWord.buzzWord ? "selected" : ""}`}>{buzzWord.buzzWord}</button> 
+            <span class="bullet-point">{bulletPoint}</span> 
         {/each}</div>
     </div>
 
     <div class="page-box">
-
         {#each buzzWordPages as buzzWord, index}
         <Page pageNumber={index} selected={selectedTab} buzzWord={buzzWord} reverse={false}/> 
         <Page pageNumber={index} selected={selectedTab} buzzWord={buzzWord} reverse={true}/> 
 
 
-
         {/each}
-        
     </div>
 
     <div class="about-grid">
@@ -52,9 +49,6 @@ const clickedTab = (e: any) => {
 </section>
 
 <style>
-
-
-   
 
 .title-box {
     margin-bottom: var(--spacing);
@@ -105,5 +99,33 @@ button {
 #about-section {
     padding: 9.8rem 0;
 }
+
+
+@media (max-width: 87em) {
+    .buzz-words {
+        display: flex;
+        /* background-color: green; */
+        /* flex-direction: column; */
+        gap: var(--spacingHalf);
+        flex-wrap:wrap;
+        justify-content: space-evenly;
+    }
+    
+    .buzz-words button {
+        font-size: 3rem !important;
+    }
+    
+    .bullet-point {
+        display: none;
+
+    }
+
+@media (max-width: 56em) {
+
+
+}
+
+}
+
 
 </style>
