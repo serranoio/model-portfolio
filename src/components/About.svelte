@@ -4,12 +4,13 @@ import { BuzzWords, buzzWordPages } from "../util/content";
 let selectedTab = BuzzWords.EthnicMinority
 import Page from "./Page.svelte"
 
-const clickedTab = (e: any) => {
+
+// @ts-ignore
+const clickedTab = (e) => {
     if (e.target.nodeName !== "BUTTON") {
         return
     }
 
-    
     selectedTab = e.target.innerText;
 }
 </script>
@@ -22,13 +23,10 @@ const clickedTab = (e: any) => {
             <span class="bullet-point">{bulletPoint}</span> 
         {/each}</div>
     </div>
-
     <div class="page-box">
         {#each buzzWordPages as buzzWord, index}
         <Page pageNumber={index} selected={selectedTab} buzzWord={buzzWord} reverse={false}/> 
         <Page pageNumber={index} selected={selectedTab} buzzWord={buzzWord} reverse={true}/> 
-
-
         {/each}
     </div>
 
@@ -39,13 +37,9 @@ const clickedTab = (e: any) => {
         </div>
         <div class="about-image-section">
             <div class="about-image">
-
             </div>
-
         </div>
-
     </div>
-
 </section>
 
 <style>

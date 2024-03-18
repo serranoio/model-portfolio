@@ -1,7 +1,8 @@
 import adapter from '@sveltejs/adapter-netlify';
 
 export default {
-  kit: {
+kit: {
     adapter: adapter()
-  }
+}
+
 };
