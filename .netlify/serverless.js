@@ -1,9 +1,28 @@
 import './shims.js';
 import { Server } from './server/index.js';
-import { createReadStream } from 'node:fs';
-import { Readable } from 'node:stream';
+import 'node:stream/web';
 import 'node:buffer';
 import 'node:crypto';
+import 'assert';
+import 'net';
+import 'http';
+import 'stream';
+import 'buffer';
+import 'util';
+import 'querystring';
+import 'stream/web';
+import 'worker_threads';
+import 'perf_hooks';
+import 'util/types';
+import 'events';
+import 'tls';
+import 'async_hooks';
+import 'console';
+import 'url';
+import 'zlib';
+import 'string_decoder';
+import 'crypto';
+import 'diagnostics_channel';
 
 var setCookie = {exports: {}};
 
@@ -263,16 +282,6 @@ function split_headers(headers) {
 }
 
 /**
- * Converts a file on disk to a readable stream
- * @param {string} file
- * @returns {ReadableStream}
- * @since 2.4.0
- */
-function createReadableStream(file) {
-	return /** @type {ReadableStream} */ (Readable.toWeb(createReadStream(file)));
-}
-
-/**
  * @param {import('@sveltejs/kit').SSRManifest} manifest
  * @returns {import('@netlify/functions').Handler}
  */
@@ -280,8 +289,7 @@ function init(manifest) {
 	const server = new Server(manifest);
 
 	let init_promise = server.init({
-		env: process.env,
-		read: (file) => createReadableStream(`.netlify/server/${file}`)
+		env: process.env
 	});
 
 	return async (event, context) => {
