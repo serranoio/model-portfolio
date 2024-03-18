@@ -12,7 +12,7 @@ return {
 	assets: new Set(["favicon.png","me-rose.jpg","robots.txt","sexy-pose.jpg"]),
 	mimeTypes: {".png":"image/png",".jpg":"image/jpeg",".txt":"text/plain"},
 	_: {
-		client: {"start":"_app/immutable/entry/start.a6201403.js","app":"_app/immutable/entry/app.76687ef1.js","imports":["_app/immutable/entry/start.a6201403.js","_app/immutable/chunks/scheduler.5549988b.js","_app/immutable/chunks/singletons.dd004ea8.js","_app/immutable/chunks/paths.257a36d6.js","_app/immutable/entry/app.76687ef1.js","_app/immutable/chunks/scheduler.5549988b.js","_app/immutable/chunks/index.8b9e0e2c.js"],"stylesheets":[],"fonts":[]},
+		client: {"start":"_app/immutable/entry/start.BFK--lIG.js","app":"_app/immutable/entry/app.CUBgks0K.js","imports":["_app/immutable/entry/start.BFK--lIG.js","_app/immutable/chunks/entry.nwNpYavh.js","_app/immutable/chunks/scheduler.DHL8RVOD.js","_app/immutable/entry/app.CUBgks0K.js","_app/immutable/chunks/scheduler.DHL8RVOD.js","_app/immutable/chunks/index.UZAK4o6Q.js"],"stylesheets":[],"fonts":[],"uses_env_dynamic_public":false},
 		nodes: [
 			__memo(() => import('../server/nodes/0.js')),
 			__memo(() => import('../server/nodes/1.js')),
@@ -30,7 +30,8 @@ return {
 		matchers: async () => {
 			
 			return {  };
-		}
+		},
+		server_assets: {}
 	}
 }
 })());
