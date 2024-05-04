@@ -66,4 +66,10 @@ console.log(photoshoot)
         width: 100%;
     }
 
+    @media (max-width: 50em) {
+        h2 {
+            font-size: var(--fontSizeXLarge);
+        }
+    }
+
 </style>
