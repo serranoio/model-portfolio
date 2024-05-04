@@ -1,8 +1,9 @@
+
 <script lang="ts">
-  import { Photoshoots } from "$lib/content";
+    import { Photoshoots } from "$lib/content";
+    import meRose from "$lib/images/me-rose.jpg"
+    import sexyPose from "$lib/images/sexy-pose.jpg"
 
-
-    console.log(Photoshoots)
 </script>
 
 
@@ -15,7 +16,12 @@
     <a href={"/" + photoshoot.url}>
     <figure class="photoshoot-grid">
             {#each photoshoot.photos as photo}
-            <img src={photo}/>
+            {#if photo === "me-rose.jpg"}
+            <img src={meRose}/>
+            {/if}
+            {#if photo === "sexy-pose.jpg"}
+            <img src={sexyPose}/>
+            {/if}
             {/each}
         </figure>
         </a>
@@ -65,12 +71,13 @@ h2, p {
 h2 {
     font-size: var(--fontSizeXXLarge);
     color: var(--gray92);
+    margin-bottom: var(--spacing);
 }
 
 p {
     font-size: var(--fontSizeXLarge);
     color: var(--gray80);
-    margin-bottom: calc(var(--spacing) * 2);
+    margin-bottom: calc(var(--spacing) * 3);
 }
 
 </style>

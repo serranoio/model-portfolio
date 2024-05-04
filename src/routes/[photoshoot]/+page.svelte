@@ -1,5 +1,7 @@
 <script lang="ts">
 import { Photoshoots, type Photoshoot } from '$lib/content.js';
+import meRose from "$lib/images/me-rose.jpg"
+    import sexyPose from "$lib/images/sexy-pose.jpg"
 
 export let data;
 let photoshoot: Photoshoot = Photoshoots.filter((photoshoot) => photoshoot.url === data.photoshoot)[0]
@@ -19,8 +21,13 @@ console.log(photoshoot)
     <h2 class="cinzel-main">{photoshoot.title}</h2>
     <p class="cinzel-main">{photoshoot.description}</p>
     <figure class="photo-grid">
-        {#each photoshoot.photos as photos}
-        <img src={photos}/>
+        {#each photoshoot.photos as photo}
+        {#if photo === "me-rose.jpg"}
+        <img src={meRose}/>
+        {/if}
+        {#if photo === "sexy-pose.jpg"}
+        <img src={sexyPose}/>
+        {/if}
         {/each}
         
     </figure>

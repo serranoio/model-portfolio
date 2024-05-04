@@ -183,7 +183,7 @@ nav {
 
 @media (max-width: 81em) {
 	nav {
-		width: 60%;
+		width: 80%;
 	}
 
 @keyframes split {
@@ -194,7 +194,7 @@ nav {
 	100% {
 		opacity: 1;
 		transform: translateY(50%);
-		width: 60%;
+		width: 80%;
 	}
 }
 }
@@ -202,7 +202,6 @@ nav {
 
 @media (max-width: 81em) {
 	nav {
-		width: 80%;
 	}
 	
 	ul {
