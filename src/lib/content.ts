@@ -112,7 +112,7 @@ export const Photoshoots: Photoshoot[] = [
 {
     title: "Puerto Ricoooo",
     photos: ["pr-1.jpg", "pr-2.jpg", "pr-3.jpg", "pr-4.jpg", "pr-5.jpg"],
-    description: `PUERTO RICOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO. Baila LA SALSA.`,
+    description: `PUERTO RICOOOOOOOOOOOOOO. Baila LA SALSA.`,
     url: PhotoshootTypes.PuertoRico, 
     photographer: "Mary",
 },

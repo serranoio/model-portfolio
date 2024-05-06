@@ -159,13 +159,13 @@ h1 {
 @media (max-width: 37em) {
 	.image-left {
 		left: -30%;
-		top: 50%;
+		top: 90%;
 		transform: translate(50%, 0%);
 	}
 	.image-right {
 		right: -30%;
-		bottom: 0%;
-		transform: translate(-50%, 0%);
+		bottom: 10%;
+		transform: translate(-50%, -30%);
 	}
 	
 	.first-name, .last-name {
