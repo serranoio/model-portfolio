@@ -167,6 +167,13 @@ p {
 
 @media (max-width: 56em) {
 
+    @media (max-width: 56em) {
+
+#gallery {
+    margin-top: 30rem;
+}
+
+}
     .grid {
         grid-template-columns: 1fr;
     }

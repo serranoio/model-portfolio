@@ -115,10 +115,10 @@ button {
     }
 
 @media (max-width: 56em) {
-
+/* 
 #about {
     margin-top: 30rem;
-}
+} */
 
 }
 
