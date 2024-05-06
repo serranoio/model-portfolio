@@ -1,8 +1,8 @@
 <script>
-import sexyPose from "$lib/images/sexy-pose.jpg"
-import gradPic from "$lib/images/grad-3.jpg"
-
+import sexyPose from "$lib/assets/sexy-pose.jpg"
+import gradPic from "$lib/assets/grad-3.jpg"
 </script>
+
 <section id="hero">
 	<div class="center">
 		<h1 class="cinzel-main">
@@ -14,7 +14,7 @@ import gradPic from "$lib/images/grad-3.jpg"
 			</span>
 			<span class="image-right">
 				<img
-				alt="topo chico"
+				alt="sexy pose"
 				src={sexyPose}
 				/>
 			</span>

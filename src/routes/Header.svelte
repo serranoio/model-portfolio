@@ -1,7 +1,7 @@
 <script>
 	import { page } from '$app/stores';
-	import logo from '$lib/images/svelte-logo.svg';
-	import github from '$lib/images/github.svg';
+	import logo from '$lib/assets/svelte-logo.svg';
+	import github from '$lib/assets/github.svg';
 </script>
 
 <header>
@@ -92,7 +92,7 @@ ul li {
 .github svg path {
 	fill: var(--gray92);
 	fill-opacity: .6;
-	clip-path: url("../lib/images/github.svg");
+	clip-path: url("../lib/assets/github.svg");
 }
 
 .left-corner {

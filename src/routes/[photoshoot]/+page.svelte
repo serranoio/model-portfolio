@@ -1,19 +1,19 @@
 <script lang="ts">
 import { Photoshoots, type Photoshoot } from '$lib/content.js';
-import meRose from "$lib/images/me-rose.jpg"
-    import sexyPose from "$lib/images/sexy-pose.jpg"
-    import grad1 from "$lib/images/grad-1.jpg"
-    import grad2 from "$lib/images/grad-2.jpg"
-    import grad3 from "$lib/images/grad-3.jpg"
-    import grad4 from "$lib/images/grad-4.jpg"
-    import grad5 from "$lib/images/grad-5.jpg"
-    import plantaDrink from "$lib/images/planta-drink.jpg"
-    import plantaSmile from "$lib/images/planta-smile.jpg"
-    import pr1 from "$lib/images/pr-1.jpg"
-    import pr2 from "$lib/images/pr-2.jpg"
-    import pr3 from "$lib/images/pr-3.jpg"
-    import pr4 from "$lib/images/pr-4.jpg"
-    import pr5 from "$lib/images/pr-5.jpg"
+import meRose from "$lib/assets/me-rose.jpg"
+    import sexyPose from "$lib/assets/sexy-pose.jpg"
+    import grad1 from "$lib/assets/grad-1.jpg"
+    import grad2 from "$lib/assets/grad-2.jpg"
+    import grad3 from "$lib/assets/grad-3.jpg"
+    import grad4 from "$lib/assets/grad-4.jpg"
+    import grad5 from "$lib/assets/grad-5.jpg"
+    import plantaDrink from "$lib/assets/planta-drink.jpg"
+    import plantaSmile from "$lib/assets/planta-smile.jpg"
+    import pr1 from "$lib/assets/pr-1.jpg"
+    import pr2 from "$lib/assets/pr-2.jpg"
+    import pr3 from "$lib/assets/pr-3.jpg"
+    import pr4 from "$lib/assets/pr-4.jpg"
+    import pr5 from "$lib/assets/pr-5.jpg"
 export let data;
 let photoshoot: Photoshoot = Photoshoots.filter((photoshoot) => photoshoot.url === data.photoshoot)[0]
     
