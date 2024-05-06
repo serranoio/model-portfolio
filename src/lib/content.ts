@@ -7,26 +7,34 @@ export interface BuzzWordPage {
 }
 
 export enum BuzzWords {
-    EthnicMinority = "Ethnic Minority",
     Hipster = "Hipster",
     SoftwareDev = "Software Dev",
     GenZ = "Gen Z",
     Dancer = "Dancer",
-    Poet= "Poet",
+    Cyberpoet= "Cyberpoet",
+    Technophilosopher = "Technophilosopher",
 }
+var targetDate = new Date('December 11, 2023');
+// Get the current date
+var currentDate = new Date();
+
+// Calculate the difference in milliseconds
+var difference = currentDate.getTime() - targetDate.getTime()
+// Convert milliseconds to days
+var daysPassed = Math.floor(difference / (1000 * 60 * 60 * 24));
 
 export const buzzWordPages: BuzzWordPage[] = [
     {
-        buzzWord: "Poet",
+        buzzWord: "Cyberpoet",
         content: `I believe that coding is a form of poetry. It is because coding is merely the process of 
-        interweaving logic and abstraction within lines to create meaning. I want to write a book about the art of coding
-        by when I am 30 years old.`,
+        interweaving logic and abstraction within lines to create meaning. I want to write a book about the art of coding.
+        It is currently in the making, and the first revision will be published this summer after I build my startups.`,
         url: "me-rose.jpg",
     },
     {
-        buzzWord: "Ethnic Minority",
-        content: `1.5 generation American. My Dad came to the states when he was 7. My mom was born here, but her parents are from Toluca, Mexico.
-        I celebrate my latino culture through singing Mexican folk songs and by dancing.`,
+        buzzWord: "Technophilosopher",
+        content: `Technology has changed our psyche in ways humanity has never seen before for good and for bad. We have to be using technology to its fullest potential while not letting it rot our brain.
+        I am not your traditional programmer (I don't think any programmer has a model portfolio, rarely any are jacked). My unique background and skillset poises me to bring balance to the industry. You have my word.`,
         url: "me-rose.jpg",
     },
     {
@@ -37,8 +45,7 @@ export const buzzWordPages: BuzzWordPage[] = [
     {
         buzzWord: "Software Dev",
         content: `To take on software development as my craft has enlightened me to climb mountain after mountain for the rest of my life.
-        The art of making mistakes, learning from them and growing is BEAUTIFUL! This is actually what inspired my first photoshoot. Software development is hard,
-        I have failed so many times. I have made so many bugs, but growing from them is what makes it so meaningful. `,
+        The art of making mistakes, learning from them and growing is BEAUTIFUL! This is actually what inspired my first photoshoot. Software development is hard; I have failed so many times. I have made so many bugs, but growing from them is what makes it so meaningful. `,
         url: "me-rose.jpg",
     },
     {
@@ -49,14 +56,15 @@ export const buzzWordPages: BuzzWordPage[] = [
     {
         buzzWord: "Dancer",
         content: `December 11th, 2023 I took my first dance lesson. Oh boy was I humbled 😬. 
-        I did not know anything. After only 3 months of 5 lessons a week, I can confidently say that
-        I am a dancer. The art is beautiful! I dance salsa and bachata 🕺🏽.`,
+        I did not know anything. ${daysPassed} days have passed and I have grown so much since :).`,
         url: "me-rose.jpg",
     }
 ]
 
 export enum PhotoshootTypes {
-    Opportunities = "opportunities"
+    Opportunities = "opportunities",
+    Grad = "grad",
+    Planta = "planta",
 }
 
 export interface Photoshoot {
@@ -70,7 +78,7 @@ export interface Photoshoot {
 export const Photoshoots: Photoshoot[] = [
 {
     title: "Problems Are Opportunities For Growth",
-    photos: ["sexy-pose.jpg", "me-rose.jpg", "sexy-pose.jpg", "me-rose.jpg"],
+    photos: ["sexy-pose.jpg", "me-rose.jpg"],
     description: `
     We need to accept that problems are a part of life, we need to accept that we will make mistakes, because it is what makes life so beautiful. 
     From the day that you were born, you have been exploring this world, making mistakes and having problems. They are a part of life.
@@ -80,6 +88,25 @@ export const Photoshoots: Photoshoot[] = [
     `,
     url: PhotoshootTypes.Opportunities,
     photographer: "https://www.simonayordanova.com/",
+},
+{
+    title: "This is The Beginning.",
+    photos: ["grad-1.jpg", "grad-2.jpg", "grad-3.jpg", "grad-4.jpg", "grad-5.jpg"],
+    description: `
+    I have planned out my next two months of work. I will be sacrificing my life in order to pursue my dreams because you are not living unless you are living on the edge of life.
+    
+    `,
+    url: PhotoshootTypes.Grad, 
+    photographer: "My parents",
+},
+{
+    title: "Planta",
+    photos: ["planta-drink.jpg", "planta-smile.jpg"],
+    description: `    
+    You can explore the world with the food that you eat, and planta offers you that experience. I ordered the entire non-alcoholic drink menu here to indulge myself with the plethora and rich flavors of this planet. It was 100% worth it.
+    `,
+    url: PhotoshootTypes.Planta, 
+    photographer: "My parents",
 },
 ]
 

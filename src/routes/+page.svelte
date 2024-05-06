@@ -8,7 +8,7 @@ import Routine from "./Routine.svelte";
 
 <svelte:head>
 	<title>David Serrano</title>
-	<meta name="description" content="Svelte demo app" />
+	<meta name="description" content="Technophilosopher takes on modeling" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
@@ -17,6 +17,13 @@ import Routine from "./Routine.svelte";
 <About/>
 <Gallery/>
 <Routine/>
+<p>This website was made with love for the universe ❤️</p>
 <style>
 
+p {
+	color: var(--gray92);
+	margin-top: 3.2rem;
+	text-align: center;
+	font-size: 2rem;
+}
 </style>

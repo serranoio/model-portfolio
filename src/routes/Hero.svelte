@@ -1,6 +1,6 @@
 <script>
-import  topochico  from "$lib/images/IMG_2865.jpg"
 import sexyPose from "$lib/images/sexy-pose.jpg"
+import gradPic from "$lib/images/grad-3.jpg"
 
 </script>
 <section id="hero">
@@ -8,8 +8,8 @@ import sexyPose from "$lib/images/sexy-pose.jpg"
 		<h1 class="cinzel-main">
 			<span class="image-left">
 				<img
-				alt="topo chico"
-				src={topochico}
+				alt="Ripped grad pic"
+				src={gradPic}
 				/>
 			</span>
 			<span class="image-right">
@@ -43,7 +43,7 @@ import sexyPose from "$lib/images/sexy-pose.jpg"
 		background-color: white;
 		width: 35rem;
 		height: 55rem;
-		right: 13%;
+		right: -10%;
 		top: -60%;
 		animation: fadeIn;
   animation-duration: 3s;
@@ -70,7 +70,7 @@ import sexyPose from "$lib/images/sexy-pose.jpg"
 	top: 0%;
 	background-color: green;
 	height: 55rem;
-	left: 15%;
+	left: 0%;
 	animation: fadeIn;
 	animation-duration: 6s;
 	animation-timing-function: ease-in-out;;

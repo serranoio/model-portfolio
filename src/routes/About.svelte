@@ -1,7 +1,7 @@
 <script lang="ts">
 import { BuzzWords, buzzWordPages } from "$lib/content"
 
-let selectedTab = BuzzWords.EthnicMinority
+let selectedTab = BuzzWords.Cyberpoet
 import Page from "./Page.svelte"
 
 

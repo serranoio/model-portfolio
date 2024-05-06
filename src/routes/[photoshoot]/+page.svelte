@@ -2,7 +2,13 @@
 import { Photoshoots, type Photoshoot } from '$lib/content.js';
 import meRose from "$lib/images/me-rose.jpg"
     import sexyPose from "$lib/images/sexy-pose.jpg"
-
+    import grad1 from "$lib/images/grad-1.jpg"
+    import grad2 from "$lib/images/grad-2.jpg"
+    import grad3 from "$lib/images/grad-3.jpg"
+    import grad4 from "$lib/images/grad-4.jpg"
+    import grad5 from "$lib/images/grad-5.jpg"
+    import plantaDrink from "$lib/images/planta-drink.jpg"
+    import plantaSmile from "$lib/images/planta-smile.jpg"
 export let data;
 let photoshoot: Photoshoot = Photoshoots.filter((photoshoot) => photoshoot.url === data.photoshoot)[0]
     
@@ -27,6 +33,27 @@ console.log(photoshoot)
         {/if}
         {#if photo === "sexy-pose.jpg"}
         <img src={sexyPose}/>
+        {/if}
+        {#if photo === "grad-2.jpg"}
+        <img src={grad2}/>
+        {/if}
+        {#if photo === "grad-1.jpg"}
+        <img src={grad1}/>
+        {/if}
+        {#if photo === "grad-3.jpg"}
+        <img src={grad3}/>
+        {/if}
+        {#if photo === "grad-4.jpg"}
+        <img src={grad4}/>
+        {/if}
+        {#if photo === "grad-5.jpg"}
+        <img src={grad5}/>
+        {/if}
+        {#if photo === "planta-drink.jpg"}
+        <img src={plantaDrink}/>
+        {/if}
+        {#if photo === "planta-smile.jpg"}
+        <img src={plantaSmile}/>
         {/if}
         {/each}
         
