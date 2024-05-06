@@ -7,14 +7,16 @@ import meRose from "$lib/assets/me-rose.jpg"
     import grad3 from "$lib/assets/grad-3.jpg"
     import grad4 from "$lib/assets/grad-4.jpg"
     import grad5 from "$lib/assets/grad-5.jpg"
+    import grad6 from "$lib/assets/grad-6.jpg"
     import plantaDrink from "$lib/assets/planta-drink.jpg"
     import plantaSmile from "$lib/assets/planta-smile.jpg"
+    import plantaMom from "$lib/assets/planta-mom.jpg"
+    import plantaWow from "$lib/assets/planta-wow.jpg"
     import pr1 from "$lib/assets/pr-1.jpg"
     import pr2 from "$lib/assets/pr-2.jpg"
     import pr3 from "$lib/assets/pr-3.jpg"
     import pr4 from "$lib/assets/pr-4.jpg"
     import pr5 from "$lib/assets/pr-5.jpg"
-    import trump from "$lib/assets/trump.jpg"
 export let data;
 let photoshoot: Photoshoot = Photoshoots.filter((photoshoot) => photoshoot.url === data.photoshoot)[0]
     
@@ -55,11 +57,20 @@ console.log(photoshoot)
         {#if photo === "grad-5.jpg"}
         <img src={grad5}/>
         {/if}
+        {#if photo === "grad-6.jpg"}
+        <img src={grad6}/>
+        {/if}
         {#if photo === "planta-drink.jpg"}
         <img src={plantaDrink}/>
         {/if}
         {#if photo === "planta-smile.jpg"}
         <img src={plantaSmile}/>
+        {/if}
+        {#if photo === "planta-wow.jpg"}
+        <img src={plantaWow}/>
+        {/if}
+        {#if photo === "planta-mom.jpg"}
+        <img src={plantaMom}/>
         {/if}
         {#if photo === "pr-1.jpg"}
         <img src={pr1}/>

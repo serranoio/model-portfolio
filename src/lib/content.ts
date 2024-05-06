@@ -92,7 +92,7 @@ export const Photoshoots: Photoshoot[] = [
 },
 {
     title: "This is The Beginning.",
-    photos: ["grad-1.jpg", "grad-2.jpg", "grad-3.jpg", "grad-4.jpg", "grad-5.jpg"],
+    photos: ["grad-1.jpg", "grad-2.jpg", "grad-3.jpg", "grad-4.jpg", "grad-5.jpg", "grad-6.jpg"],
     description: `
     I have planned out my next two months of work. I will be sacrificing my life in order to pursue my dreams because you are not living unless you are living on the edge of life.
     
@@ -102,7 +102,7 @@ export const Photoshoots: Photoshoot[] = [
 },
 {
     title: "Planta",
-    photos: ["planta-drink.jpg", "planta-smile.jpg"],
+    photos: ["planta-drink.jpg", "planta-smile.jpg", "planta-wow.jpg", "planta-mom.jpg"],
     description: `    
     You can explore the world with the food that you eat, and planta offers you that experience. I ordered the entire non-alcoholic drink menu here to indulge myself with the plethora and rich flavors of this planet. It was 100% worth it.
     `,
