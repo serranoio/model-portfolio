@@ -1,11 +1,11 @@
 
 <script lang="ts">
     import { Photoshoots } from "$lib/content";
-    import meRose from "$lib/images/me-rose.jpg"
-    import sexyPose from "$lib/images/sexy-pose.jpg"
     import grad1 from "$lib/images/grad-1.jpg"
     import grad2 from "$lib/images/grad-2.jpg"
     import grad3 from "$lib/images/grad-3.jpg"
+    import meRose from "$lib/images/me-rose.jpg"
+    import sexyPose from "$lib/images/sexy-pose.jpg"
     import grad4 from "$lib/images/grad-4.jpg"
     import grad5 from "$lib/images/grad-5.jpg"
     import plantaDrink from "$lib/images/planta-drink.jpg"
