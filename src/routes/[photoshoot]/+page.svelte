@@ -14,6 +14,7 @@ import meRose from "$lib/assets/me-rose.jpg"
     import pr3 from "$lib/assets/pr-3.jpg"
     import pr4 from "$lib/assets/pr-4.jpg"
     import pr5 from "$lib/assets/pr-5.jpg"
+    import trump from "$lib/assets/trump.jpg"
 export let data;
 let photoshoot: Photoshoot = Photoshoots.filter((photoshoot) => photoshoot.url === data.photoshoot)[0]
     

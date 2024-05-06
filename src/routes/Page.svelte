@@ -5,10 +5,36 @@ export let pageNumber: number;
 export let buzzWord: BuzzWordPage; 
 export let reverse: boolean;
 export let selected: BuzzWords; 
+import trump from "$lib/assets/trump.jpg"
+import meRose from "$lib/assets/me-rose.jpg"
+import github from "$lib/assets/github.png"
+import chicago from "$lib/assets/chicago.jpg"
+import side from "$lib/assets/side.png"
+import plantaSmile from "$lib/assets/planta-wow.jpg"
 
 $: open = buzzWord.buzzWord === selected ? "open" : ""
 
-const styles =`background-image: url(${buzzWord.url});`
+
+const getPicture = (): string => {
+
+    if (buzzWord.url === "me-rose.jpg") {
+        return meRose
+    } else if (buzzWord.url === "trump.jpg") {
+        return trump
+    } else if (buzzWord.url === "github.png") {
+        return github
+    } else if (buzzWord.url === "side.png") {
+        return side 
+    } else if (buzzWord.url === "chicago.jpg") {
+        return chicago 
+    } else if (buzzWord.url === "planta-wow.jpg") {
+        return plantaSmile 
+    }
+
+    return ""
+}
+
+const styles =`background-image: url(${getPicture()});`
 </script>
 
 <figure class={`page ${reverse ? "reverse" : "regular"} ${open}`} data-page={pageNumber}>
@@ -84,14 +110,14 @@ h2 {
     }
     
     .regular {
-        top: 80%;
+        top: 60%;
         height: 60%;
         overflow-y: scroll;
     }
 
     .reverse {
         top: 0%;
-        height: 80%;
+        height: 60%;
         width: 100%;
     }
 

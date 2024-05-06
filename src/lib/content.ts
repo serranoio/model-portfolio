@@ -35,29 +35,29 @@ export const buzzWordPages: BuzzWordPage[] = [
         buzzWord: "Technophilosopher",
         content: `Technology has changed our psyche in ways humanity has never seen before for good and for bad. We have to be using technology to its fullest potential while not letting it rot our brain.
         I am not your traditional programmer (I don't think any programmer has a model portfolio, rarely any are jacked). My unique background and skillset poises me to bring balance to the industry. You have my word.`,
-        url: "me-rose.jpg",
+        url: "planta-wow.jpg",
     },
     {
         buzzWord: "Hipster",
         content: "My moustache says it all. Who cares about fitting in with everyone? We should celebrate our uniqueness & individuality with how we look.",
-        url: "me-rose.jpg",
+        url: "trump.jpg",
     },
     {
         buzzWord: "Software Dev",
         content: `To take on software development as my craft has enlightened me to climb mountain after mountain for the rest of my life.
         The art of making mistakes, learning from them and growing is BEAUTIFUL! This is actually what inspired my first photoshoot. Software development is hard; I have failed so many times. I have made so many bugs, but growing from them is what makes it so meaningful. `,
-        url: "me-rose.jpg",
+        url: "github.png",
     },
     {
         buzzWord: "Gen Z",
         content: `I put emojis in my tech presentations at work 😜. This is because the rich character set of UTF-8 should be used to its fullest potential as it allows us to express ourselves and extend language in a way that humanity has never seen before ❤️.`,
-        url: "me-rose.jpg",
+        url: "side.png",
     },
     {
         buzzWord: "Dancer",
         content: `December 11th, 2023 I took my first dance lesson. Oh boy was I humbled 😬. 
         I did not know anything. ${daysPassed} days have passed and I have grown so much since :).`,
-        url: "me-rose.jpg",
+        url: "side.png",
     }
 ]
 
