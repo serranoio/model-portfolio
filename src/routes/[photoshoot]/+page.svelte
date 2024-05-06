@@ -9,6 +9,11 @@ import meRose from "$lib/images/me-rose.jpg"
     import grad5 from "$lib/images/grad-5.jpg"
     import plantaDrink from "$lib/images/planta-drink.jpg"
     import plantaSmile from "$lib/images/planta-smile.jpg"
+    import pr1 from "$lib/images/pr-1.jpg"
+    import pr2 from "$lib/images/pr-2.jpg"
+    import pr3 from "$lib/images/pr-3.jpg"
+    import pr4 from "$lib/images/pr-4.jpg"
+    import pr5 from "$lib/images/pr-5.jpg"
 export let data;
 let photoshoot: Photoshoot = Photoshoots.filter((photoshoot) => photoshoot.url === data.photoshoot)[0]
     
@@ -54,6 +59,21 @@ console.log(photoshoot)
         {/if}
         {#if photo === "planta-smile.jpg"}
         <img src={plantaSmile}/>
+        {/if}
+        {#if photo === "pr-1.jpg"}
+        <img src={pr1}/>
+        {/if}
+        {#if photo === "pr-2.jpg"}
+        <img src={pr2}/>
+        {/if}
+        {#if photo === "pr-3.jpg"}
+        <img src={pr3}/>
+        {/if}
+        {#if photo === "pr-4.jpg"}
+        <img src={pr4}/>
+        {/if}
+        {#if photo === "pr-5.jpg"}
+        <img src={pr5}/>
         {/if}
         {/each}
         

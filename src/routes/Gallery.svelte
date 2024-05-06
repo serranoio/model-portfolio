@@ -10,6 +10,11 @@
     import grad5 from "$lib/images/grad-5.jpg"
     import plantaDrink from "$lib/images/planta-drink.jpg"
     import plantaSmile from "$lib/images/planta-smile.jpg"
+    import pr1 from "$lib/images/pr-1.jpg"
+    import pr2 from "$lib/images/pr-2.jpg"
+    import pr3 from "$lib/images/pr-3.jpg"
+    import pr4 from "$lib/images/pr-4.jpg"
+    import pr5 from "$lib/images/pr-5.jpg"
 </script>
 
 
@@ -50,6 +55,21 @@
             {#if photo === "planta-smile.jpg"}
             <img src={plantaSmile}/>
             {/if}
+            {#if photo === "pr-1.jpg"}
+            <img src={pr1}/>
+            {/if}
+            {#if photo === "pr-2.jpg"}
+            <img src={pr2}/>
+            {/if}
+            {#if photo === "pr-3.jpg"}
+            <img src={pr3}/>
+            {/if}
+            {#if photo === "pr-4.jpg"}
+            <img src={pr4}/>
+            {/if}
+            {#if photo === "pr-5.jpg"}
+            <img src={pr5}/>
+            {/if}
             {/each}
         </figure>
         </a>
@@ -67,8 +87,33 @@
 }
 
 a {
-    grid-column: 2;
+    /* grid-column: 2; */
+    position: relative;
 }
+
+a::after {
+    content: "ENTER";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.3);
+    left: 0%;
+    top: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--fontSizeXLarge);
+    letter-spacing: 2px;
+    opacity: 0;
+    transition: all .2s;
+}
+
+a:hover::after {
+    opacity: 1;
+    color: var(--gray92);
+}
+
+
 
 .photoshoot-grid:hover {
     background-image: rgba(255, 255, 255, 50);

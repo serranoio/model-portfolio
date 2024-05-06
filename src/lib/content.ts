@@ -65,6 +65,7 @@ export enum PhotoshootTypes {
     Opportunities = "opportunities",
     Grad = "grad",
     Planta = "planta",
+    PuertoRico = "puerto-rico"
 }
 
 export interface Photoshoot {
@@ -107,6 +108,13 @@ export const Photoshoots: Photoshoot[] = [
     `,
     url: PhotoshootTypes.Planta, 
     photographer: "My parents",
+},
+{
+    title: "Puerto Ricoooo",
+    photos: ["pr-1.jpg", "pr-2.jpg", "pr-3.jpg", "pr-4.jpg", "pr-5.jpg"],
+    description: `PUERTO RICOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO. Baila LA SALSA.`,
+    url: PhotoshootTypes.PuertoRico, 
+    photographer: "Mary",
 },
 ]
 
