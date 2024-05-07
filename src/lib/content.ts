@@ -39,7 +39,7 @@ export const buzzWordPages: BuzzWordPage[] = [
     },
     {
         buzzWord: "Hipster",
-        content: "My moustache says it all. Who cares about fitting in with everyone? We should celebrate our uniqueness & individuality with how we look.",
+        content: `My moustache says it all. Who cares about fitting in with everyone? We should celebrate our uniqueness & individuality with how we look. **UPDATE** I will be shaving my moustache. I am not allowed to grow it back until I get my first customer for my startups.`,
         url: "trump.jpg",
     },
     {
@@ -93,10 +93,8 @@ export const Photoshoots: Photoshoot[] = [
 {
     title: "This is The Beginning.",
     photos: ["grad-1.jpg", "grad-2.jpg", "grad-3.jpg", "grad-4.jpg", "grad-5.jpg", "grad-6.jpg"],
-    description: `
-    I have planned out my next two months of work. I will be sacrificing my life in order to pursue my dreams because you are not living unless you are living on the edge of life.
-    
-    `,
+    description: `What will you be doing post graduation? Chilling? No. For the next two months, I am going to be spending 6 days a week, 6-8 hours a day building two start-up ideas. There is no better time in your life
+    to shoot for the stars and pursue your dreams than NOW. I am ALL IN BABY.`,
     url: PhotoshootTypes.Grad, 
     photographer: "My parents",
 },
@@ -104,7 +102,8 @@ export const Photoshoots: Photoshoot[] = [
     title: "Planta",
     photos: ["planta-drink.jpg", "planta-smile.jpg", "planta-wow.jpg", "planta-mom.jpg"],
     description: `    
-    You can explore the world with the food that you eat, and planta offers you that experience. I ordered the entire non-alcoholic drink menu here to indulge myself with the plethora and rich flavors of this planet. It was 100% worth it.
+    You can explore the world with the food that you eat, and planta offers you that experience. I ordered the entire non-alcoholic drink menu here, it was 100% worth it. I had to take my parents here so they could experience it as well.
+    The last photo is of me and my beautiful mother. 
     `,
     url: PhotoshootTypes.Planta, 
     photographer: "My parents",
@@ -140,3 +139,23 @@ export enum Row {
     Dance = "dance",
     Sleep = "sleep",
 }
+
+export const rowMap = new Map()
+
+rowMap.set(Row.FiveAm, `I wake up high asf on life practically every single day. The mere act of getting out of my bed so that I can seize the new day is breathtaking to me. The morning is the most sacred part of the day and I will never give it up.`)
+rowMap.set(Row.PlanDay, `I plan out everything that I have to do that day, by the minute.`)
+rowMap.set(Row.Meditate, `This is important so I can fill my brain with the correct context of the day. Also, I visualize solving every problem that I have during the day at this time. 2+2=4.`)
+rowMap.set(Row.CreativitySession, "My mind is free, my day is set, so I let myself dream. I walk on the clouds and fill myself up with euphoria.")
+rowMap.set(Row.BrushTeethCommunte, `Calculated.`)
+rowMap.set(Row.Gym, "My routine is: 3 laps around the track if I do not have dance, 8 minutes of abs, then I do a push-pull-legs-abs workout split.")
+rowMap.set(Row.EatShower, "I currently prepare myself 5 eggs topped with brussel sprouts, a half can of tuna, feta cheese and salt. Also, I take a cup of greek yogurt with milk, a banana, nut powder, creatine, casein protein powder and mix it all together.")
+rowMap.set(Row.FirstPomodoroSession, "This is when I am at my highest level of flow state, so I reserve this for the most critical work. 3 hours with brain breaks every 30-40 minutes.")
+rowMap.set(Row.EatLunch, "I eat a good lunch, which is chicken, vegetables, parmesean cheese + marinara sauce.")
+rowMap.set(Row.Nap, "I reward myself with a nice fat nap.")
+rowMap.set(Row.MiddayPomodoroSession, "After my nap, I am recharged to around 90% capacity.")
+rowMap.set(Row.Dinner, "I eat dinner. Same as lunch")
+rowMap.set(Row.Recharge, "I go for a post-dinner walk to speed my metabolism and get the legs moving.")
+rowMap.set(Row.LastPomodoroSession, "I am at about 70% capacity now. I cannot do intense work. This is best for wrapping things up, meetings, etc.")
+rowMap.set(Row.CommuteToDance, "I brush my teeth and spend 15 minutes commuting to dance")
+rowMap.set(Row.Dance, "Dance is extremely intellectually stimulating. It has made me a better coder.")
+rowMap.set(Row.Sleep, "I am in bed by 9 pm, ready to sleep and repeat.")

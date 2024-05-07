@@ -13,9 +13,9 @@
 
 	<nav class="cinzel-main">
 		<ul>
+			<li><a href="/#gallery">Gallery</a></li>
 			<li><a href="/#about">About</a></li>
 			<li><a href="/#routine">Routine</a></li>
-			<li><a href="/#gallery">Gallery</a></li>
 		</ul>
 	</nav>
 

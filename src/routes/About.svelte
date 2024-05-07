@@ -17,6 +17,8 @@ const clickedTab = (e) => {
 
 <section id="about">
     <div class="title-box">
+        <h2>About</h2>
+        <p>Me</p>
         <div class="buzz-words cinzel-main" on:click={clickedTab}>{#each buzzWordPages as buzzWord, index} 
             {@const bulletPoint =  index !== buzzWordPages.length-1 ? "•" : ""}
             <button class={`cinzel-main ${selectedTab === buzzWord.buzzWord ? "selected" : ""}`}>{buzzWord.buzzWord}</button> 
@@ -30,19 +32,25 @@ const clickedTab = (e) => {
         {/each}
     </div>
 
-    <div class="about-grid">
-        <div class="about-text">
-            <h3>Header</h3>
-            <p>Text</p>
-        </div>
-        <div class="about-image-section">
-            <div class="about-image">
-            </div>
-        </div>
-    </div>
 </section>
 
 <style>
+
+h2, p {
+    text-align: center;
+}
+
+h2 {
+    font-size: var(--fontSizeXXLarge);
+    color: var(--gray92);
+    margin-bottom: var(--spacing);
+}
+
+p {
+    font-size: var(--fontSizeXLarge);
+    color: var(--gray80);
+    margin-bottom: calc(var(--spacing) * 3);
+}
 
 .title-box {
     margin-bottom: var(--spacing);
@@ -90,7 +98,7 @@ button {
     height: 30rem;
 }
 
-#about-section {
+#about {
     padding: 9.8rem 0;
 }
 
