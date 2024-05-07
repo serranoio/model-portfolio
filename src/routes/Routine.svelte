@@ -122,7 +122,7 @@ const closeDrawer = () => {
         font-size: var(--fontSizeLarge);
         text-align: center;
         z-index: 999999;
-        padding: 0 24rem;
+        padding: 0 20%;
         line-height: 1.5;
         margin-top: 3rem;
     }
