@@ -154,7 +154,7 @@ rowMap.set(Row.EatLunch, "I eat a good lunch, which is chicken, vegetables, parm
 rowMap.set(Row.Nap, "I reward myself with a nice fat nap.")
 rowMap.set(Row.MiddayPomodoroSession, "After my nap, I am recharged to around 90% capacity.")
 rowMap.set(Row.Dinner, "I eat dinner. Same as lunch")
-rowMap.set(Row.Recharge, "I go for a post-dinner walk to speed my metabolism and get the legs moving.")
+rowMap.set(Row.Recharge, "I go for a walk to speed my metabolism and get the legs moving.")
 rowMap.set(Row.LastPomodoroSession, "I am at about 70% capacity now. I cannot do intense work. This is best for wrapping things up, meetings, etc.")
 rowMap.set(Row.CommuteToDance, "I brush my teeth and spend 15 minutes commuting to dance")
 rowMap.set(Row.Dance, "Dance is extremely intellectually stimulating. It has made me a better coder.")

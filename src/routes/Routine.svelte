@@ -39,12 +39,8 @@ const closeDrawer = () => {
             <td>05:00</td>
             <td>Wake up</td>
         </tr>
-        <tr id={Row.PlanDay}>
-            <td>05:15-05:30</td>
-            <td>Plan day</td>
-        </tr>
         <tr id={Row.Meditate}>
-            <td>05:00-05:15</td>
+            <td>05:15-05:30</td>
             <td>Meditate</td>
         </tr>
         <tr id={Row.PlanDay}>

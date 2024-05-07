@@ -22,7 +22,7 @@
 
 
 <section id="gallery">
-    <h2>Photoshoots</h2>
+    <h2 class="cinzel-main">Photoshoots</h2>
     <p>This is where I tell my story.</p>
     <div class="grid">
 

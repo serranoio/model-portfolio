@@ -17,7 +17,7 @@ const clickedTab = (e) => {
 
 <section id="about">
     <div class="title-box">
-        <h2>About</h2>
+        <h2 class="cinzel-main">About</h2>
         <p>Me</p>
         <div class="buzz-words cinzel-main" on:click={clickedTab}>{#each buzzWordPages as buzzWord, index} 
             {@const bulletPoint =  index !== buzzWordPages.length-1 ? "•" : ""}
