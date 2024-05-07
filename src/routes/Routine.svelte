@@ -103,6 +103,10 @@ const closeDrawer = () => {
 </section>
 
 <style>
+
+    #routine {
+        margin-top: 9.8rem;
+    }
     .center {
         position: absolute;
         left: 50%;
