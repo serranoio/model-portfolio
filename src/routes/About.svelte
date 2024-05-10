@@ -18,7 +18,7 @@ const clickedTab = (e) => {
 <section id="about">
     <div class="title-box">
         <h2 class="cinzel-main">About</h2>
-        <i>"The only role model that I have in life is me. There will never be anyone at all times for me, except for myself."
+        <i>"The only role model that I have in life is me - There will never be anyone at all times for me, except for myself."
         </i>
         <br/>
         <br/>
