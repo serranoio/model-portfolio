@@ -18,7 +18,11 @@ const clickedTab = (e) => {
 <section id="about">
     <div class="title-box">
         <h2 class="cinzel-main">About</h2>
-        <p>Me</p>
+        <i>"The only role model that I have in life is me - Since there will never be anyone there at all times for me except for myself."
+        </i>
+        <br/>
+        <br/>
+        <p>David Serrano</p>
         <div class="buzz-words cinzel-main" on:click={clickedTab}>{#each buzzWordPages as buzzWord, index} 
             {@const bulletPoint =  index !== buzzWordPages.length-1 ? "•" : ""}
             <button class={`cinzel-main ${selectedTab === buzzWord.buzzWord ? "selected" : ""}`}>{buzzWord.buzzWord}</button> 
@@ -43,13 +47,20 @@ h2, p {
 h2 {
     font-size: var(--fontSizeXXLarge);
     color: var(--gray92);
-    margin-bottom: var(--spacing);
+    margin-bottom: calc(var(--spacing) * 4);
 }
 
+i {
+    display: block;
+    text-align: center;
+    margin: 0 !important;
+    padding: 0;
+}
+i,
 p {
     font-size: var(--fontSizeXLarge);
     color: var(--gray80);
-    margin-bottom: calc(var(--spacing) * 3);
+    margin-bottom: calc(var(--spacing) * 6);
 }
 
 .title-box {
