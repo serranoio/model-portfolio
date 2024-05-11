@@ -18,10 +18,17 @@ const clickedTab = (e) => {
 <section id="about">
     <div class="title-box">
         <h2 class="cinzel-main">About</h2>
-        <i>"The only role model that I have in life is me - Since there will never be anyone at all times for me, except for myself."
+        <i>"The only role model that I have in life is me. There will never be anyone at all times for me, except for myself."
         </i>
-        <br/>
-        <br/>
+
+        <p >David Serrano</p>
+        <i class="">
+            "I am whoever the f*** I want to be.<br/>
+            <span class="text"></span>
+            -
+            <span class="text"></span>
+            I will always choose excellence."
+        </i>
         <p>David Serrano</p>
         <div class="buzz-words cinzel-main" on:click={clickedTab}>{#each buzzWordPages as buzzWord, index} 
             {@const bulletPoint =  index !== buzzWordPages.length-1 ? "•" : ""}
@@ -39,9 +46,20 @@ const clickedTab = (e) => {
 </section>
 
 <style>
-
+.text {
+    padding: 1.2rem;
+    display: block;
+    
+}
 h2, p {
     text-align: center;
+}
+
+
+.margin-bottom {
+display: block;
+margin: 0;
+    margin-bottom: 3.2rem !important;
 }
 
 h2 {
@@ -53,7 +71,7 @@ h2 {
 i {
     display: block;
     text-align: center;
-    margin: 0 !important;
+    margin: 1.2rem !important;
     padding: 0;
 }
 i,
@@ -72,6 +90,7 @@ p {
     height: 60rem;
     margin: 0 auto;
     position: relative;
+    margin-bottom: 6.6rem;
 
 }
 
