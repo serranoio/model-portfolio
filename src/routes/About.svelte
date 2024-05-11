@@ -22,14 +22,6 @@ const clickedTab = (e) => {
         </i>
 
         <p >David Serrano</p>
-        <i class="">
-            "I am whoever the f*** I want to be.<br/>
-            <span class="text"></span>
-            -
-            <span class="text"></span>
-            I will always choose excellence."
-        </i>
-        <p>David Serrano</p>
         <div class="buzz-words cinzel-main" on:click={clickedTab}>{#each buzzWordPages as buzzWord, index} 
             {@const bulletPoint =  index !== buzzWordPages.length-1 ? "•" : ""}
             <button class={`cinzel-main ${selectedTab === buzzWord.buzzWord ? "selected" : ""}`}>{buzzWord.buzzWord}</button> 
